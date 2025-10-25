@@ -48,12 +48,38 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
+		<!-- Spring Boot Validation -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
+
+		<!-- Spring Boot Data JPA -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+	<!-- PostgreSQL Database -->
+	<dependency>
+		<groupId>org.postgresql</groupId>
+		<artifactId>postgresql</artifactId>
+		<scope>runtime</scope>
+	</dependency>
+
+	<!-- H2 Database (Test için) -->
+	<dependency>
+		<groupId>com.h2database</groupId>
+		<artifactId>h2</artifactId>
+		<scope>test</scope>
+	</dependency>
+
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-devtools</artifactId>
+		<scope>runtime</scope>
+		<optional>true</optional>
+	</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
