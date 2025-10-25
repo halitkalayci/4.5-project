@@ -37,7 +37,6 @@ services:
       KAFKA_CLUSTER_ID: "5L6g3nShT-eMCtK--X86sw"
 
       KAFKA_LOG_DIRS: "/var/lib/kafka/data"
-
     volumes:
       - kafka-data:/var/lib/kafka/data
     networks:
