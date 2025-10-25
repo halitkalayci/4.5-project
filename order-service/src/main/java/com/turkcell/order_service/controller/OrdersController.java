@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RequestMapping("/api/v1/orders")
 public class OrdersController {
     @PostMapping()
-    public String postMethodName(@RequestBody CreateOrderDto dto) {
+    public String createOrder(@RequestBody CreateOrderDto dto) {
+        // Kafka eventi fırlat..
         return dto.productId;
     }
 
