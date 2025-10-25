@@ -19,7 +19,7 @@ public class OrdersController {
 
     @PostMapping()
     public String createOrder(@RequestBody CreateOrderDto dto) {
-
+        /// .........
         OrderCreatedEvent event = new OrderCreatedEvent(dto.productId());
 
         Message<OrderCreatedEvent> message = MessageBuilder.withPayload(event).build();
