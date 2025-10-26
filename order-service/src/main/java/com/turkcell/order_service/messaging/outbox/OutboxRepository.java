@@ -1,0 +1,8 @@
+package com.turkcell.order_service.messaging.outbox;
+
+import java.util.UUID;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OutboxRepository extends JpaRepository<OutboxMessage, UUID> {
+}
