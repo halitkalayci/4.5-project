@@ -58,6 +58,16 @@
       "projectName": "order-service",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-BffServiceApplication<bff-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.turkcell.bff_service.BffServiceApplication",
+      "projectName": "bff-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
