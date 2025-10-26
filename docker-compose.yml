@@ -9,6 +9,16 @@ services:
       - "5432:5432"
     volumes:
      - productdb_vol:/var/lib/postgresql/data
+  ordersv_db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: order_service
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: orderservice_db_password
+    ports:
+      - "5433:5432"
+    volumes:
+     - orderdb_vol:/var/lib/postgresql/data
   kafka:
     image: apache/kafka:3.8.0
     restart: unless-stopped
@@ -58,6 +68,7 @@ services:
 volumes:
   productdb_vol: {}
   kafka-data: {}
+  orderdb_vol: {}
 
 networks:
   kafkanet:
