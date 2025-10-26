@@ -100,6 +100,7 @@ volumes:
   productdb_vol: {}
   kafka-data: {}
   orderdb_vol: {}
+  kc_pg_data: {}
 
 networks:
   kafkanet:
