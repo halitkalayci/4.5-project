@@ -10,6 +10,12 @@ spring:
     username: postgres
     password: productservice_db_password
 
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
   kafka:
     bootstrap-servers: localhost:9094
   cloud:
@@ -21,9 +27,3 @@ spring:
         orderCreated-in-0:
           destination: order-topic
           group: product-service
-
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: update
-    show-sql: true
